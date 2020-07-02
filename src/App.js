@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import MainGrid from './MainGrid';
+import InfoPanel from './InfoPanel';
 
 
 function App() {
   return (
     <div>
         <Header />
-        <MainGrid/>
+        <InfoPanel/>
         
     </div>
     

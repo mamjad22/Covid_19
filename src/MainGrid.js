@@ -8,6 +8,7 @@ import GlobalData from './GlobalData';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: 50
   },
   paper: {
     padding: theme.spacing(2),
@@ -22,7 +23,7 @@ export default function MainGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={3}>
+        <Grid item xs={3} >
             
           <Paper className={classes.paper}>
             <GlobalData/>
