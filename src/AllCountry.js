@@ -8,7 +8,9 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        marginTop: 50
+        marginTop: 50,
+        padding: 10
+        
     },
     paper: {
         padding: theme.spacing(2),
@@ -43,13 +45,20 @@ export default function AllCountry({currentScreen}) {
 
     return (
         <div className={classes.root}>
-           <table>
+           <table >
+                <tr>
+                    <th>Country Name</th>
+                    <th>Total Cases</th>
+                    <th>Active Cases</th>
+                </tr>
+
                 {globalData.map( (key, ind) => {
                     return (
                         <tr>
-                            <td>
-                                {globalData[key].title}
-                            </td>
+                             <td>{globalData[ind].title}</td>
+                            <td>{globalData[ind].total_cases}</td>
+                            <td>{globalData[ind].total_active_cases}</td>
+                            
                         </tr>
                     )
                 }
